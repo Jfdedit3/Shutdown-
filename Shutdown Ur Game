@@ -1,0 +1,20 @@
+local h = Instance.new("Hint")
+h.Parent = Workspace 
+h.Text = "Are you sure?"
+wait(3)
+h:Remove()
+local sound = Instance.new("Sound")
+sound.SoundId = "rbxassetid://3673835822"
+sound.Looped = false
+sound.Parent = workspace
+sound:Play()
+local b = Instance.new("Message")
+b.Parent = Workspace 
+b.Text = "Stopping Services..."
+wait(0.3)
+b:Remove()
+local c = Instance.new("Message")
+c.Parent = Workspace 
+c.Text = "Shutting down Roblox..."
+wait(2)
+game:shutdown()
